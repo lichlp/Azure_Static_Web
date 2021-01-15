@@ -5,7 +5,7 @@ const Comment = ({id, name, message, date}) => {
         <div className='comment'>
             <div>{id}楼--------{name}</div>
             <div>{message}</div>
-            <div>{}</div>
+            <div>{date}</div>
         </div>
     )
 }
