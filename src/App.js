@@ -7,7 +7,7 @@ function App() {
 
   useEffect(
     () => {
-      fetch("https://fourdragon.azurewebsites.net").then(data => setMessages([...data]));
+      fetch("https://fourdragon.azurewebsites.net").then(data => JSON.parse(data)).then(data => setMessages([...data]));
     }
   );
 
