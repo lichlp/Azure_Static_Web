@@ -27,12 +27,12 @@ function App() {
   return (
     <div className='app'>
       <div>
-        <label htmlFor={name} >恁滴名字</label>
+        <label htmlFor={'name'} >恁滴名字</label>
         <input id='name' type='text' value={name} onChange={e => setName(e.target.value)} />
       </div>
       <div>
-        <label htmlFor={name} >恁想说滴话</label>
-        <textarea className='input' type='text' value={input} onChange={e => setInput(e.target.value)} />
+        <label htmlFor={'input'} >恁想说滴话</label>
+        <textarea id='input' type='text' value={input} onChange={e => setInput(e.target.value)} />
         <button onClick={submit}>Submit</button>
       </div>
       <hr />
